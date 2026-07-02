@@ -50,7 +50,7 @@ export const projects = [
     },
     {
         title: "일일산수",
-        src: "/images/thumbnails/dailyRomance.png",
+        src: "/images/thumbnails/dailyRomance.jpg",
         students: ["김세현", "노현주", "박은수", "정현서", "조경민"],
         githubLink: "https://github.com/Sehyun-Selene/Romance",
         pageLink: "https://daily-romance.vercel.app/",
