@@ -49,6 +49,13 @@ export const projects = [
         pageLink: "https://2wa6bune1.github.io/InstaCrime404/",
     },
     {
+        title: "일일산수",
+        src: "/images/thumbnails/dailyRomance.png",
+        students: ["김세현", "노현주", "박은수", "정현서", "조경민"],
+        githubLink: "https://github.com/Sehyun-Selene/Romance",
+        pageLink: "https://daily-romance.vercel.app/",
+    },
+    {
         title: "쿨레쇼프 네컷",
         src: "/images/thumbnails/kuleshov.png",
         students: ["신서윤"],
