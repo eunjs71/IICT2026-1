@@ -64,6 +64,14 @@ export const projects = [
     },
 ];
 
-export const getProjects = () => {
+export interface Project {
+    title: string;
+    src: string;
+    students: string[];
+    githubLink: string;
+    pageLink: string;
+}
+
+export const getProjects = (): Project[] => {
     return projects.sort(() => Math.random() - 0.5);
 }

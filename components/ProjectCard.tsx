@@ -1,8 +1,6 @@
-import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
     Card,
-    CardAction,
     CardDescription,
     CardFooter,
     CardHeader,
@@ -17,12 +15,14 @@ export default function ProjectCard({
     students,
     githubLink,
     pageLink,
+    eager = false,
 }: {
     title: string;
     src: string;
     students: string[];
     githubLink: string;
     pageLink: string;
+    eager?: boolean;
 }) {
     return (
         <Card className="mx-auto w-full max-w-sm overflow-hidden pt-0 shadow-[0_10px_30px_rgba(38,48,71,0.22)]">
@@ -33,6 +33,8 @@ export default function ProjectCard({
                 height={800}
                 className="h-auto w-full object-contain"
                 sizes="(max-width: 640px) 100vw, 384px"
+                loading={eager ? "eager" : "lazy"}
+                fetchPriority={eager ? "high" : "auto"}
             />
 
             <CardHeader>
@@ -44,8 +46,6 @@ export default function ProjectCard({
             </CardHeader>
 
             <CardFooter className="flex gap-2">
-
-
                 {githubLink && (
                     <Button className="flex-1" asChild>
                         <Link href={githubLink} target="_blank" rel="noopener noreferrer">
@@ -56,10 +56,11 @@ export default function ProjectCard({
 
                 {pageLink && (
                     <Button className="flex-1" asChild>
-                        <Link href={pageLink} target="_blank" rel="noopener noreferrer">View Project</Link>
+                        <Link href={pageLink} target="_blank" rel="noopener noreferrer">
+                            View Project
+                        </Link>
                     </Button>
                 )}
-
             </CardFooter>
         </Card>
     );
