@@ -1,4 +1,6 @@
 # 정보문화기술입문 2026년 1학기
+## 서울대학교 연합전공 정보문화학 
+
 <p align="center">
   <img src="./public/images/iict_poster.gif" alt="과제 포스터" width="400" />
 </p>
