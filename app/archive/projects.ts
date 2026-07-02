@@ -31,8 +31,8 @@ export const projects = [
         title: "도파민 때문에",
         src: "/images/thumbnails/dopamin.png",
         students: ["김지형", "박찬영", "이수빈", "전소은", "조주형"],
-        githubLink: "https://github.com/GPC6/dopamine",
-        pageLink: "https://gpc6.github.io/dopamine/",
+        githubLink: "https://github.com/GPC6/IICT2026-1TeamProject",
+        pageLink: "https://gpc6.github.io/IICT2026-1TeamProject/",
     },
     {
         title: "나비효과",
