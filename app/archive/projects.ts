@@ -18,7 +18,7 @@ export const projects = [
         src: "/images/thumbnails/interactiveCampus.png",
         students: ["김미정", "김지현", "손현우", "이주영", "한정우"],
         githubLink: "https://github.com/Jungwoo-Han/InteractiveCampus",
-        pageLink: "",
+        pageLink: "https://interactive-campus-yzfi.vercel.app/map.html",
     },
     {
         title: "Re:summER",
